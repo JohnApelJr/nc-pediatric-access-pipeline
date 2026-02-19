@@ -123,7 +123,7 @@ Counties with zero or near-zero specialists experience systemic delays that push
 
 Explore the fully interactive pediatric access map with zoom, hover tooltips, and county-level detail:
 
-👉 [Open Interactive Map](maps/nc_pediatric_access_interactive.html)
+👉 [Launch Interactive Map](https://johnapeljr.github.io/nc-pediatric-access-pipeline/maps/nc_pediatric_access_interactive.html)
 
 ![Interactive Preview](figures/nc_access_ratio_map.png)
 
