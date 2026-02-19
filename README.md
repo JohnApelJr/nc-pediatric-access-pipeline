@@ -3,6 +3,9 @@
 
 A Python data pipeline mapping pediatric specialist supply against child population demand across North Carolina's 100 counties to quantify access deserts and support the design of pilot access infrastructure in Western NC.
 
+## Executive Summary
+This project identifies pediatric specialist access deserts across North Carolina by integrating federal provider registries with census population data. Results show 67% of counties face severe shortages and 8 counties have zero specialists. Findings support targeted infrastructure planning for rural healthcare access programs.
+
 ![NC Pediatric Neurology Access](figures/nc_pediatric_neurology_map.png)
 *43 of 100 NC counties have zero pediatric neurologists.*
 
@@ -13,6 +16,16 @@ A Python data pipeline mapping pediatric specialist supply against child populat
 Children with complex medical needs are routinely referred to pediatric specialists. But a referral is not care. Between the moment a referral is placed and the moment a child is actually seen, there is a gap that no system owns. Wait times stretch months. Cancellations go unfilled. Families shoulder the coordination burden alone. Developmental windows close in silence.
 
 This analysis quantifies that gap for North Carolina.
+
+---
+
+## Why This Matters
+
+
+Delayed access to pediatric specialty care can permanently alter a child’s developmental trajectory. When children cannot see needed specialists in time, treatable conditions may worsen, developmental windows may close, and families are left navigating complex medical systems alone.
+
+By identifying where access gaps exist, this analysis provides decision-makers with actionable evidence to guide resource allocation, infrastructure planning, and targeted interventions that can improve health outcomes for vulnerable populations.
+
 
 ---
 
@@ -46,6 +59,15 @@ This analysis quantifies that gap for North Carolina.
 ![WNC Specialty Heatmap](figures/wnc_pilot_specialty_heatmap.png)
 *WNC pilot region: provider counts by county and specialty. Red = zero providers.*
 
+---
+
+## Technical Highlights
+- Automated API ingestion pipeline for federal datasets
+- Spatial joins across multiple geographic resolutions
+- Provider deduplication across taxonomy codes
+- County-level aggregation and classification modeling
+- Fully reproducible geospatial analytics workflow
+  
 ---
 
 ## Data Sources
@@ -150,6 +172,14 @@ nc-pediatric-access-pipeline/
 
 ---
 
+## Portfolio Impact Summary
+- Integrated 7,279 provider records across 13 specialty taxonomies
+- Built reproducible geospatial ETL pipeline using federal APIs
+- Classified access levels across all 100 counties
+- Generated decision-ready visualizations for policy planning
+  
+---
+
 ## How to Reproduce
 
 ```bash
@@ -165,13 +195,20 @@ No API keys required. All data sources are publicly accessible.
 
 ## Context
 
-This analysis was developed to support ongoing research into pediatric access infrastructure — systems designed to reduce harmful delays between identified care needs and actual outpatient care initiation. The WNC deep dive reflects the region's potential as a pilot site for access coordination programs, given its combination of concentrated urban providers and isolated rural communities.
+This analysis was developed to support ongoing research into pediatric access infrastructure, systems designed to reduce harmful delays between identified care needs and actual outpatient care initiation. The WNC deep dive reflects the region's potential as a pilot site for access coordination programs, given its combination of concentrated urban providers and isolated rural communities.
 
+---
+## Future Extensions
+- Travel-time accessibility modeling using road networks
+- Wait-time prediction using provider capacity estimation
+- Simulation of mobile specialty clinic deployment
+- Telehealth hub optimization modeling
+  
 ---
 
 ## Author
 
 **John Apel**
-M.S. Applied Data Science — Syracuse University (December 2025)
+M.S. Applied Data Science — Syracuse University 
 
 [Portfolio](https://johnapeljr.github.io) · [LinkedIn](https://linkedin.com/in/john-apel-76700154) · [GitHub](https://github.com/JohnApelJr)
