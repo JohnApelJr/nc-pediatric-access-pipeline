@@ -284,18 +284,16 @@
         function geo_json_76b29e82638b9fb0ab9907b062beeed9_styler(feature) {
             switch(feature.id) {
                 default:
-                    return {"color": "blue", "dashArray": "5,5", "fillOpacity": 0, "weight": 3};
+                    return {"color": "#0055ff", "dashArray": "7,5", "fillOpacity": 0, "weight": 3.5};
             }
         }
 
         function geo_json_76b29e82638b9fb0ab9907b062beeed9_onEachFeature(feature, layer) {
-
-            layer.on({
-            });
+            // Non-interactive — let county choropleth layer handle all events
         };
         var geo_json_76b29e82638b9fb0ab9907b062beeed9 = L.geoJson(null, {
                 onEachFeature: geo_json_76b29e82638b9fb0ab9907b062beeed9_onEachFeature,
-            
+                interactive: false,
                 style: geo_json_76b29e82638b9fb0ab9907b062beeed9_styler,
             ...{
 }
@@ -333,5 +331,3 @@
             ).addTo(map_4b4c8f286070815f1f8d6458f186c556);
 
         
-</script>
-</html>
